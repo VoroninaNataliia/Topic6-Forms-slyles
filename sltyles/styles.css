@@ -1,18 +1,23 @@
 
+/*вариан 1*/
+
 .forms {
     padding: 10px;
+    background-color: aquamarine;
+    width: 300px;
 }
 
 .form-field {
     position: relative;
-    width: 150px;
+    width: 100%;
     margin: 30px 0px;
+    
 
 }
 
 .form-input {
     
-    width: 100%;
+    width: 180px;
     margin: 0px;
     padding: 10px 20px;
     font: inherit;
@@ -49,6 +54,11 @@
     left: 5px;
     transform: translateY(50%);
     background-color: aqua;
+}
+
+/*сeлeктор значит - когда .forms в видимом сост.focus применить... - */
+.forms:focus-within { 
+    background-color: yellow;
 }
 
 

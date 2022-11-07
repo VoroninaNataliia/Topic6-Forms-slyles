@@ -1,0 +1,56 @@
+
+.forms {
+    padding: 10px;
+}
+
+.form-field {
+    position: relative;
+    width: 150px;
+    margin: 30px 0px;
+
+}
+
+.form-input {
+    
+    width: 100%;
+    margin: 0px;
+    padding: 10px 20px;
+    font: inherit;
+    border-radius: 3px;
+    border: 2px solid red;
+}
+
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    background-color: teal;
+
+    transition: transform 250ms linear;
+}
+
+.form-input:focus + .form-label,
+/*селектор значит - следующий селектор с именем .form-label, который идет после .form-input, когда он ОТКЛЮЧЕН (:not) от состояния placeholder-shown*/
+.form-input:not(:placeholder-shown) + .form-label {
+ transform: translateY(-50px);
+}
+/*селектор значит - класс .form-input в состоянии placeholder-shown*/
+.form-input:placeholder-shown {
+    background-color: red;
+}
+
+.icon {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 5px;
+    transform: translateY(50%);
+    background-color: aqua;
+}
+
+
+
+

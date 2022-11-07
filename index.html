@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms-Styles</title>
+    <link rel="stylesheet" href="./sltyles/styles.css"/>
+</head>
+<body>
+<!--позиционируем визульно label внутри input-->
+    <form class="forms">
+        <div class="form-field">
+            <input class="form-input" 
+            type="text" 
+            name="name" 
+            id="name"
+            placeholder=" "><!--здесь значение "пробел", чтоб применялись селекторы, связанные с "placeholder"-->
+            <!--селектор label нужно ставить после input - иначе не сработает селектор "+" -->
+            <label class="form-label" for="name">Name</label>
+            <span class="icon"></span>
+        </div>
+
+         <div class="form-field">
+            <input class="form-input" 
+            type="tel" 
+            name="tel" 
+            id="tel"
+            placeholder=" ">
+            <label class="form-label" for="tel">Tel.</label>   
+            <span class="icon"></span> 
+        </div>
+
+         <div class="form-field">
+            <input class="form-input" 
+            type="email" 
+            name="mail" 
+            id="mail"
+            placeholder="mail@mail.com">
+            <label class="form-label" for="mail">E-Mail</label>
+            <span class="icon"></span>
+        </div>
+
+    </form>
+
+</body>
+</html>
